@@ -1,4 +1,9 @@
+import uuid
+from datetime import datetime
+
 user_brenno = {
+    'id':str(uuid.uuid4()),
+    'created_at':datetime.now().isoformat(timespec='seconds'),
     'nome':'Brenno',
     'sobrenome':'Vieira',
     'idade':20,
